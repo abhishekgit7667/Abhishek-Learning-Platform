@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Learn</h1>
-<p>This is the learning page.</p>
+<h1 class="mb-4">Learn</h1>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card p-3 mb-3">
+            <h4>SQL Basics</h4>
+            <p>Learn SQL fundamentals in simple steps.</p>
+            <a href="#" class="btn btn-outline-primary">View Topic</a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 mb-3">
+            <h4>Python Basics</h4>
+            <p>Start Python programming from scratch.</p>
+            <a href="#" class="btn btn-outline-primary">View Topic</a>
+        </div>
+    </div>
+</div>
 {% endblock %}
