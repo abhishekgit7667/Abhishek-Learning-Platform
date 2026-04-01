@@ -1,31 +1,27 @@
 from flask import Blueprint, render_template
 
-main = Blueprint('main', __name__)
+main = Blueprint("main", __name__, template_folder="templates")
 
 @main.route("/")
 def home():
     return render_template("home.html")
 
-@main.route("/")
+@main.route("/about")
 def about():
     return render_template("about.html")
 
-@main.route("/")
-def base():
-    return render_template("base.html")
+@main.route("/projects")
+def projects():
+    return render_template("projects.html")
 
-@main.route("/")
-def contact():
-    return render_template("contact.html")
-
-@main.route("/")
+@main.route("/learn")
 def learn():
     return render_template("learn.html")
 
-@main.route("/")
-def login():
-    return render_template("login.html")
+@main.route("/contact")
+def contact():
+    return render_template("contact.html")
 
-@main.route("/")
-def project():
-    return render_template("project.html")
+@main.route("/login")
+def login():
+    return "<h1>Login Page Coming Soon</h1>"

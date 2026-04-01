@@ -1,10 +1,8 @@
 from flask import Flask
-from flask import Blueprint, render_template
 
 def create_app():
-    app = Flask(__name__,template_folder='templates')
-
-    app.config['SECRET_KEY'] = 'your_secret_key'
+    app = Flask(__name__)
+    app.config["SECRET_KEY"] = "your_secret_key"
 
     from app.routes import main
     app.register_blueprint(main)
