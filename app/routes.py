@@ -25,3 +25,7 @@ def contact():
 @main.route("/login")
 def login():
     return "<h1>Login Page Coming Soon</h1>"
+
+@main.route("/topic/<name>")
+def topic_detail(name):
+    return render_template("topic_detail.html", name=name)
